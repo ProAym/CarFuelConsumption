@@ -1,41 +1,50 @@
-🚗 Car Fuel Consumption Prediction from Images
-Overview
-Developed a deep learning-based regression model to predict car fuel consumption directly from exterior vehicle images. This project explores a vision-based approach for vehicle energy efficiency assessment, offering a scalable and cost-effective alternative to traditional testing methods.
+# 🚗 Car Fuel Consumption Prediction from Images
 
-Key Features
-Model Architectures:
+## Overview
+This project uses deep learning techniques to **predict car fuel consumption from exterior vehicle images**, providing a vision-based approach to vehicle efficiency assessment.  
+It leverages **CNNs and transfer learning (VGG16, MobileNetV2)** to deliver a fast, scalable alternative to traditional methods.
 
-Custom CNN
+---
 
-Fine-tuned VGG16 and MobileNetV2 using transfer learning
+## 🔑 Key Features
 
-Dataset:
+- **Model Architectures:**
+  - Custom CNN
+  - Fine-tuned **VGG16** and **MobileNetV2** using transfer learning
 
-Built a custom dataset of 2,970 car images labeled with fuel consumption data
+- **Dataset:**
+  - **2,970 car images** labeled with actual fuel consumption data
+  - Applied **data augmentation** to improve model robustness
 
-Applied data augmentation for improved generalization
+- **Performance Metrics:**
+  - Mean Squared Error (MSE)
+  - Mean Absolute Error (MAE)
+  - Root Mean Squared Error (RMSE)
+  - R-Squared (R² Score)
 
-Performance Metrics:
+---
 
-MSE, MAE, RMSE, R² Score
+## 🚀 Results
 
-Results
-Best performer: MobileNetV2 (Fine-tuned)
+| Model                   | MSE     | MAE     | RMSE    | R² Score |
+|-------------------------|---------|---------|---------|----------|
+| Custom CNN               | 4.0386  | 0.4504  | 2.0096  | 0.6074   |
+| Fine-tuned VGG16         | 3.777   | 0.4346  | 1.9434  | 0.6328   |
+| Fine-tuned MobileNetV2   | 2.9364  | 0.3906  | 1.7136  | 0.7145   |
 
-MAE: 0.3906
+✅ **MobileNetV2 (Fine-tuned)** achieved the best performance with an **MAE of 0.3906** and **R² of 0.7145**, outperforming both the custom CNN and VGG16.
 
-R² Score: 0.7145
+---
 
-Outperformed custom CNN (R² 0.6074) and fine-tuned VGG16 (R² 0.6328)
+## 💡 Highlights
 
-Model	MSE	MAE	RMSE	R² Score
-Custom CNN	4.0386	0.4504	2.0096	0.6074
-Fine-tuned VGG16	3.777	0.4346	1.9434	0.6328
-Fine-tuned MobileNetV2	2.9364	0.3906	1.7136	0.7145
+- Demonstrated that **transfer learning significantly boosts performance** on visual regression tasks.
+- Showcased the potential for **data-driven vehicle efficiency assessments** using images alone.
+- Provided a **cost-effective, scalable, and automated solution** for fuel consumption estimation.
 
-🔥 Proved the effectiveness of transfer learning for regression tasks on visual data, offering a faster, automated tool for fuel consumption estimation.
+---
 
-Tech Stack
-Python, TensorFlow, Keras
+## 🛠 Tech Stack
 
-Libraries: NumPy, Matplotlib, etc.
+- **Languages & Frameworks:** Python, TensorFlow, Keras
+- **Libraries:** NumPy, Matplotlib, Scikit-learn, etc.
